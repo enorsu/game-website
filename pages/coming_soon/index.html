@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="/res/js/audio_script.js" defer></script>
+    <script src="/res/js/coming_soon_script.js" defer></script>
+    
+    
     <style>
         /* Custom CSS for centering the content */
         body {
@@ -25,27 +29,8 @@
         <a href="/index.html" class="w3-bar-item w3-button w3-round w3-black">Back to home</a>
     </div>
 
-    <script>
-        // Function to get URL parameters
-        function getURLParameter(name) {
-            return new URLSearchParams(window.location.search).get(name);
-        }
 
-        // Function to set the title from the URL parameter
-        function setTitleFromParameter() {
-            // Get the 'title' parameter from the URL
-            const title = getURLParameter('t');
 
-            // If a title is provided, update the document title and heading
-            if (title) {
-                document.title = title + " - Coming Soon";
-                document.getElementById('title').textContent = title + " is Coming Soon";
-            }
-        }
-
-        // Call the function to set the title
-        setTitleFromParameter();
-    </script>
 
 </body>
 </html>
