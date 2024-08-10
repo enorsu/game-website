@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
 <link rel="stylesheet" href="res/css/dark.css">
+<script src="res/js/clickable_image.js"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 .w3-bar-block .w3-bar-item {padding:20px}
@@ -14,17 +15,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 </head>
 <body>
 
-<!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()"
-  class="w3-bar-item w3-button">Close Menu</a>
-  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-</nav>
 
 <div class="w3-center">
 
-<img src="res/images/logo.png" alt="Logo" style="height: 150px;">
+<img src="res/images/logo.png" alt="Logo" style="height: 150px; cursor: pointer;" onclick="redirect('/pages/credits/index.html')">
 
 </div>
   
@@ -34,8 +28,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   <!-- First Photo Grid-->
   <div class="w3-row-padding  w3-center" id="food">
     <div class="w3-quarter">
-      <img src="res/images/sauna1.png" alt="" style="width:100%" >
-      <img src="res/images/sauna2.png" alt="" style="width:100%" >
+      <video width="100%" autoplay loop>
+        <source src="res/videos/juhannussauna.mp4" type="video/mp4">
+      </video>
       <h3 class="w3-link"><a href="/pages/juhannussauna/index.html">Juhannussauna 2024</a></h3>
       <h5><a href="/res/games/juhannussauna/index.html">suoraan kokonäyttöön</a></h5>
     </div>
@@ -52,17 +47,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 
 <!-- End page content -->
 </div>
+<h4 class="w3-center">Website made with ❤️ by <a href="https://github.com/enorsu">enorsu</a></h4>
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
+
 
 </body>
 </html>
