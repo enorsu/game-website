@@ -24,6 +24,10 @@ function sdfkljsdklfj() {
     
 }
 
+function revertThings() {
+    secret_btn.style.display = "block";
+    secret.innerHTML = "you got trolled xDDD";
+}
 
 function applyThings() {
     secret_btn.style.display = "none";
