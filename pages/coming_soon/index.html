@@ -4,31 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
+        /* Custom CSS for centering the content */
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
             background-color: #282c34;
             color: white;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
-        p {
-            font-size: 1.5rem;
         }
     </style>
 </head>
-<body>
-    <div>
-        <h1 id="title">Coming Soon</h1>
+<body class="w3-black">
 
+    <div class="w3-center">
+        <h1 id="title" class="w3-jumbo">Coming Soon</h1>
+        <a href="/index.html" class="w3-bar-item w3-button w3-round w3-black">Back to home</a>
     </div>
 
     <script>
@@ -40,7 +34,7 @@
         // Function to set the title from the URL parameter
         function setTitleFromParameter() {
             // Get the 'title' parameter from the URL
-            const title = getURLParameter("t");
+            const title = getURLParameter('t');
 
             // If a title is provided, update the document title and heading
             if (title) {
@@ -52,5 +46,6 @@
         // Call the function to set the title
         setTitleFromParameter();
     </script>
+
 </body>
 </html>
