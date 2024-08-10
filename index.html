@@ -8,7 +8,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
 <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="res/css/dark.css">
-<script src="res/js/clickable_image.js"></script>
+<link rel="stylesheet" href="res/css/popup.css">
+<script src="res/js/popup.js" defer></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 .black-ops-one-regular {
@@ -23,10 +24,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 </head>
 <body>
 
+<div id="credits" class="modal">
+ <!-- Modal content -->
+ <div class="modal-content">
+  <div class="modal-header">
+    <span class="close">&times;</span>
+    <h2>Credits</h2>
+  </div>
+  <div class="modal-body">
+    <p>Game design by Taiku09, Veizu, valvex</p>
+    <p>Website made by enorsu</p>
+    <p>proudly powered by w3.css</p>
+  </div>
+</div> 
+</div>
 
 <div class="w3-center">
 
-<img src="res/images/logo.png" alt="Logo" style="height: 150px; cursor: pointer;" onclick="redirect('/pages/credits/index.html')">
+<img src="res/images/logo.png" alt="Logo" style="height: 150px;" >
 
 </div>
 
@@ -34,6 +49,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   <div class="w3-bar w3-center">
       <a href="/index.html" class="w3-bar-item w3-button w3-round">Home</a>
       <a href="/pages/scratch/index.html" class="w3-bar-item w3-button w3-round">Scratch games</a>
+      <a class="w3-bar-item w3-button w3-round" id="openCredits">Credits</a>
   </div>
 </div>
   
@@ -56,7 +72,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   
 
 </div>
-<h4 class="w3-center">Website made with ❤️ by <a href="https://github.com/enorsu">enorsu</a></h4>
+<h5 class="w3-center">Website made with ❤️ by <a href="https://github.com/enorsu">enorsu</a></h5>
 
 
 
