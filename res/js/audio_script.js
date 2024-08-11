@@ -16,6 +16,8 @@ function music1() {playmusic("/res/audio/waitingmusic.mp3", 0.2);}
 
 function music2() {playmusic("/res/audio/gta_iv.mp3", 0.2);}
 
+function music3() {playmusic("/res/audio/red_sun.mp3", 0.2);}
+
 function stopmusic() {
     if (myAudio) {
         myAudio.pause();         // Pause the audio
