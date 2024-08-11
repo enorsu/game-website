@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nut Games - Bug Reports</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/res/css/dark.css">
+    <script src="bugs.js" defer></script>
+
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Karma", sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #f2f2f2;
+        }
+
+        .black-ops-one-regular {
+            font-family: "Black Ops One", sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px;
+            background-color: #1a1a1a;
+            color: #f2f2f2;
+        }
+
+        .header img {
+            height: 150px;
+        }
+
+        .header h1 {
+            margin-top: 10px;
+            font-size: 36px;
+        }
+
+        .nav-bar {
+            max-width: fit-content;
+            margin: 20px auto;
+        }
+
+        .nav-bar a {
+            display: inline-block;
+            font-family: Black Ops One;
+            padding: 10px 20px;
+            background-color: #000000;
+            color: #f2f2f2;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-bar a:hover {
+            background-color: #5858583b;
+        }
+
+        .content {
+            padding: 20px;
+            margin: auto;
+            max-width: 1200px;
+            margin-top: 50px;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .bug-form, .bug-list {
+            margin: 40px 0;
+        }
+
+        .bug-form a {
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+            background-color: #1e90ff;
+            color: #f2f2f2;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            margin: auto;
+            max-width: 300px;
+            transition: background-color 0.3s ease;
+        }
+
+        .bug-form a:hover {
+            background-color: #4682b4;
+        }
+
+        .bug-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .bug-list li {
+            background-color: #1a1a1a;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #f2f2f2;
+            margin-top: 50px;
+        }
+
+        .footer a {
+            color: #1e90ff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #4682b4;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="/res/images/logo.png" alt="Logo">
+    <div class="nav-bar w3-content w3-center">
+        <a href="/index.html">Back to home</a>
+    </div>
+    <h1><strong>Bug Reports</strong></h1>
+</div>
+
+
+
+<div class="content w3-main w3-content w3-padding w3-round-large black-ops-one-regular">
+
+    <div class="bug-form w3-card w3-padding w3-round-large">
+        <h2 class="w3-center">Submit a Bug Report</h2>
+        <a href="https://github.com/enorsu/your-repo/issues" target="_blank">Go to GitHub Issues</a>
+    </div>
+
+    <div class="bug-list w3-card w3-padding w3-round-large">
+        <h2 class="w3-center">Latest Bugs Fixed</h2>
+        <ul id="bugList"></ul>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>Website made with ❤️ by <a href="https://github.com/enorsu">enorsu</a></p>
+</div>
+
+</body>
+</html>
