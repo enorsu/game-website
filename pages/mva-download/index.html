@@ -8,6 +8,7 @@
     <script src="/res/js/audio_script.js" defer></script>
     <script src="script.js" defer></script>
 
+
     
     
     <style>
@@ -51,9 +52,38 @@
         .w3-display-bottommiddle {
             color: white;
         }
+
+        .scrolling-image-container {
+        overflow: hidden;
+      }
+
+      .scrolling-image {
+  background: url("/res/images/wall.webp") repeat-x;
+  height: 750px;
+  width: 7680px;
+  animation: slide 3s linear infinite;
+}
+
+    @keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-3840px); /* The image width */
+  }
+}
+
+.bg1 {
+  background-image: url("/res/images/wall.webp");
+  background-repeat: repeat;
+  background-size: 10%;
+}
+
+
     </style>
 </head>
-<body class="w3-dark-grey">
+<body class="bg1">
+
 
     <div class="topcorner" id="mute">
         <img src="/res/images/mute-icon.png" alt="Mute Icon"  style="width: 30px; height: 30px; cursor: pointer;">
@@ -96,7 +126,7 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="w3-container w3-center w3-padding-32 w3-dark-grey">
+    <footer class="w3-container w3-center w3-padding-32 w3-dark-grey bg1">
         <p>Developed by valvex, Veizu, Taiku09 | &copy; 2024</p>
     </footer>
 
