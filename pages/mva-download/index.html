@@ -8,14 +8,11 @@
     <script src="/res/js/audio_script.js" defer></script>
     <script src="script.js" defer></script>
 
-
-    
-    
     <style>
-         .topcorner{
-            position: relative;
-            top:0;
-            right:0;
+           .topcorner {
+            position: absolute;
+            top: 10px;
+            right: 10px;
         }
         .game-info {
             background-color: #1b1b1b;
@@ -38,75 +35,82 @@
             max-width: 100%;
             position: relative;
             margin: auto;
-            height: 400px; /* You can adjust the height as needed */
+            height: 600px; /* Adjust the height as needed */
+            overflow: hidden;
+            background-color: #000; /* Black background for better image visibility */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
+        .slides-wrapper {
+            display: flex;
+            transition: transform 1s ease;
+        }
+
         .mySlides {
-            display: none;
-            text-align: center; /* Center the images */
+            min-width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
         }
-        .slideshow-container img {
+
+        .mySlides img {
+            max-width: 100%;
+            max-height: 100%;
             width: auto;
-            height: 100%;
-            max-height: 400px; /* Ensures the image height doesn't exceed the container */
-        }
-        .w3-display-bottommiddle {
-            color: white;
+            height: 600px;
+            object-fit: contain;
         }
 
-        .scrolling-image-container {
-        overflow: hidden;
-      }
-
-      .scrolling-image {
-  background: url("/res/images/wall.webp") repeat-x;
-  height: 750px;
-  width: 7680px;
-  animation: slide 3s linear infinite;
-}
-
-    @keyframes slide {
-  0% {
-    transform: translate(0);
-  }
-  100% {
-    transform: translate(-3840px); /* The image width */
-  }
-}
-
-.bg1 {
-  background-image: url("/res/images/wall.webp");
-  background-repeat: repeat;
-  background-size: 10%;
-}
-
-
+        .bg1 {
+            background-image: url("/res/images/wall.webp");
+            background-repeat: repeat;
+            background-size: 10%;
+        }
     </style>
 </head>
 <body class="bg1">
-
-
     <div class="topcorner" id="mute">
-        <img src="/res/images/mute-icon.png" alt="Mute Icon"  style="width: 30px; height: 30px; cursor: pointer;">
+        <img src="/res/images/mute-icon.png" alt="Mute Icon" style="width: 30px; height: 30px; cursor: pointer;">
     </div>
 
     <!-- Slideshow -->
     <div class="slideshow-container">
-
-        <div class="mySlides w3-animate-fading">
-            <img src="/res/images/mva1.jpg" alt="Slide 1">
-            <div class="w3-display-bottommiddle w3-large w3-padding"></div>
+        <div class="slides-wrapper">
+            <div class="mySlides">
+                <img src="/res/images/mva1.jpg" alt="Slide 1">
+            </div>
+            <div class="mySlides">
+                <img src="/res/images/mva2.jpg" alt="Slide 2">
+            </div>
+            <div class="mySlides">
+                <img src="/res/images/mva3.jpg" alt="Slide 3">
+            </div>
+            <div class="mySlides">
+                <img src="/res/images/mva4.jpg" alt="Slide 4">
+            </div>
+            <div class="mySlides">
+                <img src="/res/images/mva5.jpg" alt="Slide 5">
+            </div>
+            <div class="mySlides">
+                <img src="/res/images/mva6.jpg" alt="Slide 6">
+            </div>
+            <div class="mySlides">
+                <img src="/res/images/mva7.jpg" alt="Slide 7">
+            </div>
+            <div class="mySlides">
+                <img src="/res/images/mva8.jpg" alt="Slide 8">
+            </div>
+            <div class="mySlides">
+                <img src="/res/images/mva9.jpg" alt="Slide 9">
+            </div>
+            <div class="mySlides">
+                <img src="/res/images/mva10.jpg" alt="Slide 10">
+            </div>
         </div>
-
-        <div class="mySlides w3-animate-fading">
-            <img src="/res/images/mva2.jpg" alt="Slide 2">
-            <div class="w3-display-bottommiddle w3-large w3-padding"></div>
-        </div>
-
-        <div class="mySlides w3-animate-fading">
-            <img src="/res/images/mva3.jpg" alt="Slide 3">
-            <div class="w3-display-bottommiddle w3-large w3-padding"></div>
-        </div>
-
     </div>
 
     <!-- Game Information Section -->
@@ -116,7 +120,6 @@
                 <h2>Mestari Varas Auto 1</h2>
                 <p>Welcome To City 69!</p>
                 <iframe width="600" height="180" src="https://www.moddb.com/mods/mestari-varas-auto/widget" frameborder="0"></iframe>
-
             </div>
             <div class="w3-col l4 m12 w3-center">
                 <h3>Download Now</h3>
@@ -132,20 +135,19 @@
 
     <script>
         let slideIndex = 0;
-        showSlides();
+        const slidesWrapper = document.querySelector('.slides-wrapper');
+        const slides = document.querySelectorAll('.mySlides');
 
         function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
             slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            slides[slideIndex-1].style.display = "block";  
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            slidesWrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
             setTimeout(showSlides, 4000); // Change image every 4 seconds
         }
-    </script>
 
+        showSlides();
+    </script>
 </body>
 </html>
