@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MVa Download</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="dots.css">
     <script src="/res/js/audio_script.js" defer></script>
     <script src="script.js" defer></script>
+    <script src="slides.js" defer></script>
 
     <style>
            .topcorner {
@@ -84,6 +86,7 @@
     <!-- Slideshow -->
     <div class="slideshow-container">
         <div class="slides-wrapper">
+            <!-- Slides -->
             <div class="mySlides">
                 <img src="/res/images/mva1.jpg" alt="Slide 1">
             </div>
@@ -105,9 +108,20 @@
             <div class="mySlides">
                 <img src="/res/images/mva7.jpg" alt="Slide 7">
             </div>
-
+        </div>
+    
+        <!-- Dots -->
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
         </div>
     </div>
+    
 
     <div class="topcorner" id="mute" style="cursor: pointer; background-color: white;">
         <img src="/res/images/mute-icon.png" alt="Mute Audio" style="width: 30px; height: 30px;">
@@ -135,21 +149,6 @@
         <p>Developed by valvex, Veizu, Taiku09 | &copy; 2024</p>
     </footer>
 
-    <script>
-        let slideIndex = 0;
-        const slidesWrapper = document.querySelector('.slides-wrapper');
-        const slides = document.querySelectorAll('.mySlides');
 
-        function showSlides() {
-            slideIndex++;
-            if (slideIndex >= slides.length) {
-                slideIndex = 0;
-            }
-            slidesWrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
-            setTimeout(showSlides, 4000); // Change image every 4 seconds
-        }
-
-        showSlides();
-    </script>
 </body>
 </html>
