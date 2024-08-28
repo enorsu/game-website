@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Aug 31, 2024 21:00:00").getTime();
+var countDownDate = new Date("September 1, 2024 18:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -23,6 +23,6 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "MVA 0.2.5.1 has been released to the public!";
+    document.getElementById("countdown-div").innerHTML = "MVA 0.2.5.1 has been released to the public!";
   }
 }, 1000);
