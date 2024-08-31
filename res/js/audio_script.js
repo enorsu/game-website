@@ -18,6 +18,8 @@ function music2() {playmusic("/res/audio/gta_iv.mp3", 0.2);}
 
 function music3() {playmusic("/res/audio/red_sun.mp3", 0.2);}
 
+function music4() {playmusic("/res/audio/mva-cover1.mp3", 0.2);}
+
 function stopmusic() {
     if (myAudio) {
         myAudio.pause();         // Pause the audio
