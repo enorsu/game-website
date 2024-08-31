@@ -24,5 +24,6 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("countdown-div").innerHTML = "MVA 0.2.5.1 has been released to the public!";
+    document.location.href = "/pages/mva-download-new/index.html";
   }
 }, 1000);

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVa Download</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="dots.css">
+    <script src="/res/js/audio_script.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="slides.js" defer></script>
+    <script src="/res/js/icon.js"></script>
+    <script src="/res/js/countdown.js" defer></script>
+
+    <style>
+           .topcorner {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .game-info {
+            background-color: #1b1b1b;
+            color: white;
+            padding: 20px;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .download-button:hover {
+            background-color: #45a049;
+        }
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+            height: 600px; /* Adjust the height as needed */
+            overflow: hidden;
+            background-color: #000; /* Black background for better image visibility */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slides-wrapper {
+            display: flex;
+            transition: transform 1s ease;
+        }
+
+        .mySlides {
+            min-width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .mySlides img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: 600px;
+            object-fit: contain;
+        }
+
+        .bg1 {
+            background-image: url("/res/images/wall.webp");
+            background-repeat: repeat;
+            background-size: 10%;
+        }
+
+        .bg2 {
+            background-image: url("/res/images/wall_gray.webp");
+            background-repeat: repeat;
+            background-size: 10%;
+        }
+    </style>
+</head>
+<body class="">
+
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <div class="slides-wrapper">
+            <!-- Slides -->
+            <div class="mySlides">
+                <img src="/res/images/mva_cover.png" alt="Slide 0">
+            </div>
+            <div class="mySlides">
+                <img src="/res/images/mva1.jpg" alt="Slide 1">
+            </div>
+            <div class="mySlides">
+                <img src="/res/images/mva2.jpg" alt="Slide 2">
+            </div>
+            <div class="mySlides">
+                <img src="/res/images/mva3.jpg" alt="Slide 3">
+            </div>
+            <div class="mySlides">
+                <img src="/res/images/mva4.jpg" alt="Slide 4">
+            </div>
+            <div class="mySlides">
+                <img src="/res/images/mva5.jpg" alt="Slide 5">
+            </div>
+            <div class="mySlides">
+                <img src="/res/images/mva6.jpg" alt="Slide 6">
+            </div>
+            <div class="mySlides">
+                <img src="/res/images/mva7.jpg" alt="Slide 7">
+            </div>
+        </div>
+    
+        <!-- Dots -->
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+        </div>
+    </div>
+    
+
+    <div class="topcorner" id="mute" style="cursor: pointer; background-color: white;">
+        <img src="/res/images/mute-icon.png" alt="Mute Audio" style="width: 30px; height: 30px;">
+    </div>
+
+    <!-- Game Information Section -->
+    <section class="game-info w3-container w3-padding-64 bg2">
+        
+        <div class="w3-row-padding">
+            <div class="w3-col l8 m12">
+                <h2>Mestari Varas Auto 1</h2>
+                <p>Welcome To City 69!</p>
+            </div>
+
+            
+            <div class="w3-col l4 m12 w3-center">
+                <h3>Download Now</h3>
+                <a href="https://drive.google.com/drive/folders/1gII4P2aYYNzf_lb1aksje_6LzAI6_ncH" class="download-button">Download Game</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="w3-container w3-center w3-padding-32 w3-dark-grey bg1">
+        <p>Developed by valvex, Elmaco, Taiku09, Veizu | &copy; 2024</p>
+    </footer>
+
+
+</body>
+</html>
