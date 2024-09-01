@@ -10,7 +10,7 @@ function checkIfNoAudioFromUrl() {
     if (audio == "true") {
         
     } else {
-        music2();
+        music4();
     }
 }
 
