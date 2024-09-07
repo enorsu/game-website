@@ -20,6 +20,8 @@ function music3() {playmusic("/res/audio/red_sun.mp3", 0.2);}
 
 function music4() {playmusic("/res/audio/mva-cover1.mp3", 0.5);}
 
+function music5() {playmusic("/res/audio/m_music1.mp3", 0.5);}
+
 function stopmusic() {
     if (myAudio) {
         myAudio.pause();         // Pause the audio

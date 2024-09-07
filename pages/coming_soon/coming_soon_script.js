@@ -26,6 +26,8 @@ function setTitleFromParameter() {
         music2();
     } else if (audio == "3") {
         music3();
+    } else if (audio == "4") {
+        music5();
     }
 }
 }
