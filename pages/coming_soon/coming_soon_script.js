@@ -28,6 +28,8 @@ function setTitleFromParameter() {
         music3();
     } else if (audio == "5") { // dd
         music5();
+    } else if (audio == "6") { // diddy
+        music6();
     }
 }
 }
