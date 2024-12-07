@@ -24,7 +24,7 @@ function music5() {playmusic("/res/audio/m_music1.mp3", 0.5);}
 
 function music6() {playmusic("/res/audio/overwatch_1.mp3", 0.5);} //fuck my first javascript ever UPDATE: didnt work :(
 
-function music6() {playmusic("/res/audio/suomi.mp3", 0.5);}
+function music7() {playmusic("/res/audio/suomi.mp3", 0.5);}
 
 function stopmusic() {
     if (myAudio) {
