@@ -30,9 +30,10 @@ function setTitleFromParameter() {
         music5();
     } else if (audio == "6") { // diddy
         music6();
+    } else if (audio == "7") { // party
+        music7();
     }
 }
 }
-
 // Call the function to set the title
 setTitleFromParameter();
