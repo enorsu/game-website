@@ -26,6 +26,8 @@ function music6() {playmusic("/res/audio/overwatch_1.mp3", 0.5);} //fuck my firs
 
 function music7() {playmusic("/res/audio/suomi.mp3", 0.5);}
 
+function music8() {playmusic("/res/audio/wait_01.mp3", 0.5);}
+
 function music69() {playmusic("/res/audio/69.mp3", 0.5);}
 
 function stopmusic() {
